@@ -17,18 +17,18 @@
   <meta property="og:description" content="For all staff to keep track of work done" />
   <meta property="og:type" content="Website" />
   <!--<meta property="og:image" content="<?php echo $this->absPath;?>images/ppdclogo.png"/>-->
-  <link rel="stylesheet" href="../css/uikit.css" />
+  <link rel="stylesheet" href="../../css/uikit.css" />
 
-  <link rel="stylesheet" href="../css/components.css" />
-  <link rel="stylesheet" href="../css/slider.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/slider.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico" rel="stylesheet">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/foundation.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
   <link href="https://fonts.googleapis.com/css?family=Ewert|Kranky|Lobster|Ribeye+Marrow|Rock+Salt" rel="stylesheet">
-  <script src="../js/uikit.min.js"></script>
+  <script src="../../js/uikit.min.js"></script>
 
-  <script src="../js/uikit-icons.min.js"></script>
+  <script src="../../js/uikit-icons.min.js"></script>
   <style>
     input[type="text"],
     input[type="date"],
@@ -47,7 +47,7 @@
   </style>
 </head>
 
-<body class='parallax'>
+<body class='parallax' uk-height-viewport>
   <nav class="uk-navbar-container pallette4 uk-navbar-transparent uk-padding-remove-vertical" uk-sticky uk-navbar>
 
     <div class="uk-navbar-left">
@@ -63,10 +63,11 @@
       <ul class="uk-navbar-nav ">
         <li class='uk-padding-remove-vertical'><a href="#add-report-item" uk-toggle class="uk-button uk-button-text"  title="Add an task item" uk-tooltip="pos: bottom" uk-icon="icon: file-edit"></a></li>
         <li class='uk-padding-remove-vertical'><a href="file:///C:/Users/ver%20Tingir/Projects/Amebo/html/timeline.html"  title="View Your colleagues report" uk-tooltip="pos: bottom" class="uk-button uk-button-text" uk-icon="icon: list"></a></li>
-        <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../images/profile_user.jpg"></a>
+        <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../../images/profile_user.jpg"></a>
           <div class="uk-navbar-dropdown  pallette2" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
             <ul class="uk-nav uk-navbar-dropdown-nav pallette2">
               <li><a href="#" class="uk-button uk-button-text">My Timeline</a></li>
+              <li><a href="#" class="uk-button uk-button-text">Settings</a></li>
               <li><a href="#" class="uk-button uk-button-text">Logout</a></li>
             </ul>
           </div>
@@ -248,7 +249,7 @@
                   <div class="uk-grid-collapse" uk-grid>
                          <div class="uk-width-auto">
                              <div class='uk-margin'>
-                                 <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../images/profile_user2.jpeg"></a>
+                                 <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../../images/profile_user2.jpeg"></a>
                              </div>
                          </div>
                          <div class="uk-width-expand">
@@ -262,7 +263,7 @@
                      </div>
                   </div>
                 <div class="timeline-content">
-                  <p class="timeline-content-date">Wednesday, 30th December 2017</h2>
+                  <p class="timeline-content-date">Wednesday, 30th December 2017</p>
                     <p class='uk-light'>
                       <ul class="uk-list uk-light uk-text-right uk-button-text" uk-toggle="target: #edit-report-item" style="cursor: pointer">
                         <li>Build of Home page for Amebo</li>
@@ -296,7 +297,7 @@
                   <div class="uk-grid-collapse" uk-grid>
                     <div class="uk-width-auto">
                         <div class='uk-margin'>
-                            <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../images/profile_user1.jpg"></a>
+                            <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../../images/profile_user1.jpg"></a>
                         </div>
                     </div>
                     <div class="uk-width-expand">
@@ -310,7 +311,7 @@
                 </div>
                   </div>
                 <div class="timeline-content right">
-                  <p class="timeline-content-date">Monday, 27th November 2017</h2>
+                  <p class="timeline-content-date">Monday, 27th November 2017</p>
                     <p class='uk-light'>
                       <ul class="uk-list uk-light uk-text-left uk-button-text" uk-toggle="target: #edit-report-item" style="cursor: pointer">
                         <li>Meeting with Kunle to discuss fetures of the platform</li>
@@ -344,7 +345,7 @@
                   <div class="uk-grid-collapse" uk-grid>
                     <div class="uk-width-auto">
                         <div class='uk-margin'>
-                            <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../images/profile_user3.jpg"></a>
+                            <a href="#"><img class="uk-border-rounded" width="100" height="100" src="../../images/profile_user3.jpg"></a>
                         </div>
                     </div>
                     <div class="uk-width-expand">
@@ -358,7 +359,7 @@
                 </div>
                   </div>
                 <div class="timeline-content">
-                  <p class="timeline-content-date">Monday, 27th November 2017</h2>
+                  <p class="timeline-content-date">Monday, 27th November 2017</p>
                     <p class='uk-light'>
                       <ul class="uk-list uk-light uk-text-right uk-button-text" uk-toggle="target: #edit-report-item" style="cursor: pointer">
                         <li>Meeting with Kunle to discuss fetures of the platform</li>
@@ -382,6 +383,8 @@
                 </div>
               </div>
             </div>
+
+
             <!-- xx-->
           </div>
         </div>
@@ -389,10 +392,10 @@
     </div>
   </div>
 
-  <script src="../js/vendor/jquery.js"></script>
-  <script src="../js/vendor/what-input.js"></script>
-  <script src="../js/vendor/foundation.min.js"></script>
-  <script src="../js/slider.js"></script>
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/vendor/what-input.js"></script>
+  <script src="../../js/vendor/foundation.min.js"></script>
+  <script src="../../js/slider.js"></script>
   <script>
     $(document).foundation();
     var $navList = $('.menu-fancy');

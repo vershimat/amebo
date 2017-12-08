@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Settings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <!-- <meta http-equiv="cache-control" content="no-cache"> -->
+  <meta name="audience" content="all">
+  <meta name="author" content="http://procurementmonitor.org/ppdc/">
+  <meta name="description" content="Repoting platform for staff of PPDC">
+
+  <meta name="page-topic" content="Login">
+  <meta name="page-type" content="Web Application">
+  <meta property="og:title" content="Amebo" />
+  <meta property="og:description" content="For all staff to keep track of work done" />
+  <meta property="og:type" content="Website" />
+  <!--<meta property="og:image" content="<?php echo $this->absPath;?>images/ppdclogo.png"/>-->
+  <link rel="stylesheet" href="../../css/uikit.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/slider.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico" rel="stylesheet">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../css/foundation.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ewert|Kranky|Lobster|Ribeye+Marrow|Rock+Salt" rel="stylesheet">
+  <script src="../../js/uikit.min.js"></script>
+  <script src="../../js/uikit-icons.min.js"></script>
+  <style>
+    input[type="text"],
+    input[type="date"],
+    input[type="password"],
+    textarea,
+    textarea.uk-textarea,
+    select.uk-select {
+
+      background-color: transparent;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus {
+      background-color: transparent;
+      color: red;
+    }
+  </style>
+</head>
+
+<body class="parallax" uk-height-viewport>
+  <nav class="uk-navbar-container pallette4 uk-navbar-transparent uk-padding-remove-vertical" uk-sticky uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="#">Amebo</a></li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav ">
+        <li class='uk-padding-remove-vertical'><a href="file:///C:/Users/ver%20Tingir/Projects/Amebo/html/timeline.html" title="View Your colleagues report" uk-tooltip="pos: bottom"
+            class="uk-button uk-button-text" uk-icon="icon: list"></a></li>
+        <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../../images/profile_user.jpg"></a>
+          <div class="uk-navbar-dropdown  pallette2" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+            <ul class="uk-nav uk-navbar-dropdown-nav pallette2">
+              <li><a href="#" class="uk-button uk-button-text">My Timeline</a></li>
+              <li><a href="#" class="uk-button uk-button-text">Logout</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/vendor/what-input.js"></script>
+  <script src="../../js/vendor/foundation.min.js"></script>
+  <script src="../../js/slider.js"></script>
+  <script>
+    $(document).foundation();
+    var $navList = $('.menu-fancy');
+    $navList.on('click', 'li:not(.is-selected)', function (e) {
+      $navList.find(".is-selected").removeClass("is-selected");
+      $(e.currentTarget).addClass("is-selected");
+    });
+  </script>
+</body>
+
+</html>

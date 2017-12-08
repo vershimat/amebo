@@ -17,18 +17,18 @@
   <meta property="og:description" content="For all staff to keep track of work done" />
   <meta property="og:type" content="Website" />
   <!--<meta property="og:image" content="<?php echo $this->absPath;?>images/ppdclogo.png"/>-->
-  <link rel="stylesheet" href="../css/uikit.css" />
+  <link rel="stylesheet" href="../../css/uikit.css" />
 
-  <link rel="stylesheet" href="../css/components.css" />
-  <link rel="stylesheet" href="../css/slider.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/slider.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Pacifico" rel="stylesheet">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/foundation.css" />
+  <link rel="stylesheet" href="../../css/foundation.css" />
   <link href="https://fonts.googleapis.com/css?family=Ewert|Kranky|Lobster|Ribeye+Marrow|Rock+Salt" rel="stylesheet">
-  <script src="../js/uikit.min.js"></script>
+  <script src="../../js/uikit.min.js"></script>
 
-  <script src="../js/uikit-icons.min.js"></script>
+  <script src="../../js/uikit-icons.min.js"></script>
   <style>
     input[type="text"],
     input[type="date"],
@@ -47,7 +47,7 @@
   </style>
 </head>
 
-<body class='parallax'>
+<body class='parallax' uk-height-viewport>
   <nav class="uk-navbar-container pallette4 uk-navbar-transparent uk-padding-remove-vertical" uk-sticky uk-navbar>
 
     <div class="uk-navbar-left">
@@ -55,7 +55,6 @@
       <ul class="uk-navbar-nav">
         <li class="uk-active"><a href="#">Amebo</a></li>
       </ul>
-
     </div>
 
     <div class="uk-navbar-right">
@@ -63,10 +62,11 @@
       <ul class="uk-navbar-nav ">
         <li class='uk-padding-remove-vertical'><a href="#add-report-item" uk-toggle class="uk-button uk-button-text" uk-icon="icon: file-edit"></a></li>
         <li class='uk-padding-remove-vertical'><a href="file:///C:/Users/ver%20Tingir/Projects/Amebo/html/timeline.html" class="uk-button uk-button-text" uk-icon="icon: list"></a></li>
-        <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../images/profile_user.jpg"></a>
+        <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../../images/profile_user.jpg"></a>
           <div class="uk-navbar-dropdown  pallette2" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
             <ul class="uk-nav uk-navbar-dropdown-nav pallette2">
-              <li><a href="#" class="uk-button uk-button-text">My Timeline</a></li>
+              <li class='uk-active'><a href="#" class="uk-button uk-button-text">My Timeline</a></li>
+              <li><a href="#" class="uk-button uk-button-text">Settings</a></li>
               <li><a href="#" class="uk-button uk-button-text">Logout</a></li>
             </ul>
           </div>
@@ -87,7 +87,7 @@
           <div class='uk-width-1-1 uk-margin'>
             <label class="uk-form-label" for="form-stacked-text">Update report for:</label>
             <div class="uk-form-controls">
-              <input class="uk-input" id="form-stacked-text" type="date">
+              <input class="uk-input" id="form-stacked-text" type="date" min="2017-12-12">
             </div>
           </div>
           <div class="uk-margin uk-width-1-1">
@@ -190,7 +190,7 @@
                 <div class="uk-button uk-button-default uk-float-right"><a href="#edit-profile" uk-toggle uk-icon="icon: upload" tabindex="-1"></a></div>
               </div>
               <div style="width:100%">
-                <img class="uk-border-circle cent" width="75%" height="75%" src="../images/profile_user.jpg">
+                <img class="uk-border-circle cent" width="75%" height="75%" src="../../images/profile_user.jpg">
               </div>
             </div>
           </div>
@@ -315,7 +315,7 @@
                       <div class="uk-badge uk-label uk-float-right" style="background-color: transparent"><a href="#edit-profile" uk-toggle uk-icon="icon: pencil"></a></div>
                     </div>
                     <div style="width:100%">
-                      <img class="uk-border-circle cent" width="75%" height="75%" src="../images/profile_user.jpg">
+                      <img class="uk-border-circle cent" width="75%" height="75%" src="../../images/profile_user.jpg">
                     </div>
                   </div>
                   <hr>
@@ -427,7 +427,7 @@
 
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <img class="uk-border-circle" width="40" height="40" src="../images/profile_user.jpg">
+                  <img class="uk-border-circle" width="40" height="40" src="../../images/profile_user.jpg">
                 </div>
                 <div class="timeline-content">
                   <p class="timeline-content-date">Wednesday, 30th December 2017</h2>
@@ -456,7 +456,7 @@
 
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <img class="uk-border-circle" width="40" height="40" src="../images/profile_user.jpg">
+                  <img class="uk-border-circle" width="40" height="40" src="../../images/profile_user.jpg">
                 </div>
                 <div class="timeline-content right">
                   <p class="timeline-content-date">Monday, 27th November 2017</h2>
@@ -485,7 +485,7 @@
 
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <img class="uk-border-circle" width="40" height="40" src="../images/profile_user.jpg">
+                  <img class="uk-border-circle" width="40" height="40" src="../../images/profile_user.jpg">
                 </div>
                 <div class="timeline-content">
                   <p class="timeline-content-date">Monday, 27th November 2017</h2>
@@ -600,11 +600,10 @@
 
     </div>
   </div>
-
-  <script src="../js/vendor/jquery.js"></script>
-  <script src="../js/vendor/what-input.js"></script>
-  <script src="../js/vendor/foundation.min.js"></script>
-  <script src="../js/slider.js"></script>
+  <script src="../../js/vendor/jquery.js"></script>
+  <script src="../../js/vendor/what-input.js"></script>
+  <script src="../../js/vendor/foundation.min.js"></script>
+  <script src="../../js/slider.js"></script>
   <script>
     $(document).foundation();
     var $navList = $('.menu-fancy');

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Admin Summary</title>
+  <title>Admin Requests</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,8 +61,8 @@
         <li class='uk-padding-remove-vertical'><a href="#" class="uk-button uk-button-text"><img class="uk-border-circle" width="30" height="30" src="../../images/profile_user.jpg"></a>
           <div class="uk-navbar-dropdown  pallette2" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
             <ul class="uk-nav uk-navbar-dropdown-nav pallette2">
-              <li class='uk-active'><a href="#" class="uk-button uk-button-text">Summary</a></li>
-              <li class=''><a href="#" class="uk-button uk-button-text">Requests</a></li>
+              <li class=''><a href="#" class="uk-button uk-button-text">Summary</a></li>
+              <li class='uk-active'><a href="#" class="uk-button uk-button-text">Requests</a></li>
               <li class=''><a href="#" class="uk-button uk-button-text">Timeline</a></li>
               <li><a href="#" class="uk-button uk-button-text">Logout</a></li>
             </ul>
@@ -72,71 +72,32 @@
     </div>
   </nav>
 
-  <!-- This is the modal -->
-  <div id="modal-example" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body pallette2">
-          <h2 class="uk-modal-title">Total Summary</h2>
-          <table class="uk-table uk-table-small uk-table-divider" style="background-color: transparent">
-    <tbody style="background-color: transparent">
-        <tr>
-            <td>Total Number of days</td>
-            <td>200</td>
-        </tr>
-        <tr>
-          <td>Total Number of days missed</td>
-          <td>23</td>
-        </tr>
-        <tr>
-          <td>Total Number of Logged</td>
-          <td>182</td>
-        </tr>
-        <tr>
-          <td>Weekends/Holidays</td>
-          <td>10</td>
-        </tr>
-    </tbody>
-</table>
-      </div>
-  </div>
+<div class='uk-padding'>
+  <ul class="uk-tab" uk-tab uk-grid>
+    <li class="uk-width-1-2@s"><a href="#">Requests</a></li>
+    <li class="uk-width-1-2@s"><a href="#">Issue out</a></li>
+</ul>
+<ul class="uk-switcher">
+  <li><a href="#">Requests</a></li>
+  <li>
 
-  <div class='uk-padding'>
-    <div class='uk-grid-small uk-child-width-1-4@s' uk-grid>
-      <div>
-        <div class="card uk-padding-remove" uk-toggle="target: #modal-example">
-          <div class="uk-height-small">
-          <img src="../../images/profile_user1.jpg" height="50%">
-        </div>
-          <div class="card-section pallette1 uk-light">
-            <h4>Chidinma Udeh</h4>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card uk-padding-remove">
-          <img src="../../images/profile_user2.jpeg" class=" uk-height-small">
-          <div class="card-section pallette1 uk-light">
-            <h4>Nnenna Eze</h4>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card uk-padding-remove">
-          <img src="../../images/profile_user3.jpg" class=" uk-height-small">
-          <div class="card-section pallette1 uk-light">
-            <h4>Mercy Don Igwe</h4>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="card uk-padding-remove">
-          <img src="../../images/profile_user.jpg" class=" uk-height-small">
-          <div class="card-section pallette1 uk-light">
-            <h4>Vershima Tingir</h4>
-          </div>
-        </div>
-      </div>
+<div class='uk-grid-small' uk-grid>
+  <div>
+    <div class='uk-width-medium uk-form-horizontal'>
+      <fieldset class="fieldset">
+    <legend class="uk-legend">Staff names</legend>
+
+
+</fieldset>
     </div>
   </div>
+  <div>
+  </div>
+</div>
+
+  </li>
+</ul>
+</div>
 
   <script src="../../js/vendor/jquery.js"></script>
   <script src="../../js/vendor/what-input.js"></script>

@@ -39,6 +39,11 @@
             color: red;
         }
     </style>
+    <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#load').modal('show');
+    });
+</script>
 </head>
 
 <body>
@@ -54,8 +59,9 @@
                 </div>
             </nav>
             <!-- This is the modal -->
-            <div id="modal-example" uk-modal>
-                <div class="uk-modal-dialog uk-modal-body trans-back uk-light">
+            <div id="load">
+
+                <div class=" trans-back uk-light uk-margin-auto uk-width-xlarge">
                     <div class="translucent-form-overlay">
                         <form>
 
@@ -78,10 +84,8 @@
                             <hr style='width: 75%'>
                         </form>
                     </div>
+                  </div>
 
-
-
-                </div>
             </div>
         </div>
     </div>
@@ -91,6 +95,7 @@
     <script>
         $(document).foundation();
     </script>
+
 </body>
 
 </html>
